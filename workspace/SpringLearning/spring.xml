@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+
+<beans>
+
+ <bean id="triangle" class="spring.day1.beanFactory.Triangle"/>
+ <bean id="circle" class="spring.day1.beanFactory.Circle"/>
+ <bean id="rectangle" class="spring.day1.beanFactory.Rectangle"/>
+
+
+ <!--  <bean id="fileEventDao" class="com.devdaily.springtest1.dao.FileEventDao">
+    <property name="dataSource" ref="basicDataSource"/>
+  </bean>
+
+  <bean id="basicDataSource" class="org.apache.commons.dbcp.BasicDataSource">
+    <property name="driverClassName" value="com.mysql.jdbc.Driver" />
+    <property name="url" value="jdbc:mysql://localhost/my_database" />
+    <property name="username" value="my_username" />
+    <property name="password" value="my_password" />
+    <property name="initialSize" value="3" />
+    <property name="maxActive" value="10" />
+  </bean> -->
+
+</beans>

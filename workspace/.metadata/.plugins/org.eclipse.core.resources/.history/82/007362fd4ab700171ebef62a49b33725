@@ -1,0 +1,19 @@
+package read.or.output;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Demo {
+
+	public static void main(String[] args) {
+		List<?>  list =new ArrayList<>();
+		System.out.println(list);
+		
+	}
+
+}
+
+/*
+for(int i :: {1,2,3})
+			System.out.println(i);
+*/

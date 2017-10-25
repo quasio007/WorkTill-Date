@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Learning TestNG1]">
+  <test name="Data Provider(failed)">
+    <classes>
+      <class name="com.testNg.ArrayAssert">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- com.testNg.ArrayAssert -->
+      <class name="com.testNg.TestSkippingAndPriority">
+        <methods>
+          <include name="testTestNg0"/>
+          <include name="testTestNg1"/>
+        </methods>
+      </class> <!-- com.testNg.TestSkippingAndPriority -->
+    </classes>
+  </test> <!-- Data Provider(failed) -->
+</suite> <!-- Failed suite [Learning TestNG1] -->

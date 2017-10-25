@@ -1,0 +1,36 @@
+package read.or.output;
+
+import java.util.HashSet;
+import java.util.Set;
+
+public class Demo {
+
+	public static void main(String[] args) {
+		Set<I> set =new HashSet<>();
+		set.add(E.HI);
+		set.add(E.HOW);
+		set.add(E.ARE);
+		set.add(E.HI);
+		set.add(E.YOU);
+		set.add(E.HI);
+
+	}
+
+}
+
+interface I{
+	void getSomething();
+}
+
+enum E implements I{
+	HI,HOW,ARE,YOU;
+
+	@Override
+	public void getSomething() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}
+
+

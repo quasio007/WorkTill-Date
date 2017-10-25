@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="8" passed="8">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="12425" started-at="2017-05-02T10:53:18Z" finished-at="2017-05-02T10:53:30Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="12425" started-at="2017-05-02T10:53:18Z" finished-at="2017-05-02T10:53:30Z">
+      <class name="com.quasio.ParametrisedTestUsingDaataProvider">
+        <test-method status="PASS" signature="before()[pri:0, instance:com.quasio.ParametrisedTestUsingDaataProvider@4f063c0a]" name="before" is-config="true" duration-ms="6" started-at="2017-05-02T16:23:18Z" finished-at="2017-05-02T16:23:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="before()[pri:0, instance:com.quasio.ParametrisedTestUsingDaataProvider@4f063c0a]" name="before" is-config="true" duration-ms="6" started-at="2017-05-02T16:23:18Z" finished-at="2017-05-02T16:23:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="before()[pri:0, instance:com.quasio.ParametrisedTestUsingDaataProvider@4f063c0a]" name="before" is-config="true" duration-ms="6" started-at="2017-05-02T16:23:18Z" finished-at="2017-05-02T16:23:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="f1(int, int, boolean)[pri:0, instance:com.quasio.ParametrisedTestUsingDaataProvider@4f063c0a]" name="f1" duration-ms="3012" started-at="2017-05-02T16:23:18Z" data-provider="param" finished-at="2017-05-02T16:23:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f1 -->
+        <test-method status="PASS" signature="f1(int, int, boolean)[pri:0, instance:com.quasio.ParametrisedTestUsingDaataProvider@4f063c0a]" name="f1" duration-ms="3012" started-at="2017-05-02T16:23:18Z" data-provider="param" finished-at="2017-05-02T16:23:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f1 -->
+        <test-method status="PASS" signature="f1(int, int, boolean)[pri:0, instance:com.quasio.ParametrisedTestUsingDaataProvider@4f063c0a]" name="f1" duration-ms="3012" started-at="2017-05-02T16:23:18Z" data-provider="param" finished-at="2017-05-02T16:23:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f1 -->
+        <test-method status="PASS" signature="after()[pri:0, instance:com.quasio.ParametrisedTestUsingDaataProvider@4f063c0a]" name="after" is-config="true" duration-ms="203" started-at="2017-05-02T16:23:21Z" finished-at="2017-05-02T16:23:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+        <test-method status="PASS" signature="after()[pri:0, instance:com.quasio.ParametrisedTestUsingDaataProvider@4f063c0a]" name="after" is-config="true" duration-ms="230" started-at="2017-05-02T16:23:21Z" finished-at="2017-05-02T16:23:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+        <test-method status="PASS" signature="after()[pri:0, instance:com.quasio.ParametrisedTestUsingDaataProvider@4f063c0a]" name="after" is-config="true" duration-ms="252" started-at="2017-05-02T16:23:21Z" finished-at="2017-05-02T16:23:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+        <test-method status="PASS" signature="before()[pri:0, instance:com.quasio.ParametrisedTestUsingDaataProvider@4f063c0a]" name="before" is-config="true" duration-ms="1" started-at="2017-05-02T16:23:21Z" finished-at="2017-05-02T16:23:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="f2(int, int)[pri:0, instance:com.quasio.ParametrisedTestUsingDaataProvider@4f063c0a]" name="f2" duration-ms="3002" started-at="2017-05-02T16:23:21Z" data-provider="param1" finished-at="2017-05-02T16:23:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f2 -->
+        <test-method status="PASS" signature="after()[pri:0, instance:com.quasio.ParametrisedTestUsingDaataProvider@4f063c0a]" name="after" is-config="true" duration-ms="24" started-at="2017-05-02T16:23:24Z" finished-at="2017-05-02T16:23:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+        <test-method status="PASS" signature="f2(int, int)[pri:0, instance:com.quasio.ParametrisedTestUsingDaataProvider@4f063c0a]" name="f2" duration-ms="3002" started-at="2017-05-02T16:23:24Z" data-provider="param1" finished-at="2017-05-02T16:23:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f2 -->
+        <test-method status="PASS" signature="before()[pri:0, instance:com.quasio.ParametrisedTestUsingDaataProvider@4f063c0a]" name="before" is-config="true" duration-ms="0" started-at="2017-05-02T16:23:24Z" finished-at="2017-05-02T16:23:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="after()[pri:0, instance:com.quasio.ParametrisedTestUsingDaataProvider@4f063c0a]" name="after" is-config="true" duration-ms="25" started-at="2017-05-02T16:23:27Z" finished-at="2017-05-02T16:23:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+        <test-method status="PASS" signature="before()[pri:0, instance:com.quasio.ParametrisedTestUsingDaataProvider@4f063c0a]" name="before" is-config="true" duration-ms="3" started-at="2017-05-02T16:23:27Z" finished-at="2017-05-02T16:23:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="before()[pri:0, instance:com.quasio.ParametrisedTestUsingDaataProvider@4f063c0a]" name="before" is-config="true" duration-ms="3" started-at="2017-05-02T16:23:27Z" finished-at="2017-05-02T16:23:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="before()[pri:0, instance:com.quasio.ParametrisedTestUsingDaataProvider@4f063c0a]" name="before" is-config="true" duration-ms="2" started-at="2017-05-02T16:23:27Z" finished-at="2017-05-02T16:23:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="f3(int, int, boolean)[pri:0, instance:com.quasio.ParametrisedTestUsingDaataProvider@4f063c0a]" name="f3" duration-ms="3002" started-at="2017-05-02T16:23:27Z" data-provider="param" finished-at="2017-05-02T16:23:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f3 -->
+        <test-method status="PASS" signature="f3(int, int, boolean)[pri:0, instance:com.quasio.ParametrisedTestUsingDaataProvider@4f063c0a]" name="f3" duration-ms="3002" started-at="2017-05-02T16:23:27Z" data-provider="param" finished-at="2017-05-02T16:23:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f3 -->
+        <test-method status="PASS" signature="f3(int, int, boolean)[pri:0, instance:com.quasio.ParametrisedTestUsingDaataProvider@4f063c0a]" name="f3" duration-ms="3002" started-at="2017-05-02T16:23:27Z" data-provider="param" finished-at="2017-05-02T16:23:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f3 -->
+        <test-method status="PASS" signature="after()[pri:0, instance:com.quasio.ParametrisedTestUsingDaataProvider@4f063c0a]" name="after" is-config="true" duration-ms="23" started-at="2017-05-02T16:23:30Z" finished-at="2017-05-02T16:23:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+        <test-method status="PASS" signature="after()[pri:0, instance:com.quasio.ParametrisedTestUsingDaataProvider@4f063c0a]" name="after" is-config="true" duration-ms="60" started-at="2017-05-02T16:23:30Z" finished-at="2017-05-02T16:23:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+        <test-method status="PASS" signature="after()[pri:0, instance:com.quasio.ParametrisedTestUsingDaataProvider@4f063c0a]" name="after" is-config="true" duration-ms="40" started-at="2017-05-02T16:23:30Z" finished-at="2017-05-02T16:23:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+      </class> <!-- com.quasio.ParametrisedTestUsingDaataProvider -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

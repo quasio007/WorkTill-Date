@@ -1,0 +1,3 @@
+cd /Users/mohitgodara/Documents/Eclipse/workspace/TestNg_Learning
+ant run runAsTestngXslt
+Killall Terminal

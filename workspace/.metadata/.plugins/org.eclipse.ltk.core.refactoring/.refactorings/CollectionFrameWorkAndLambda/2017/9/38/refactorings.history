@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;ImpLambdaExample.java&apos; to &apos;CollectionFrameWork/src/list.Interface&apos;&#x0A;- Original project: &apos;CollectionFrameWork&apos;&#x0A;- Destination element: &apos;CollectionFrameWork/src/list.Interface&apos;&#x0A;- Original element: &apos;list.Interface.ImpLambdaExample.java&apos;" description="Copy compilation unit" destination="/src&lt;list.Interface" element1="/src&lt;list.Interface{ImpLambdaExample.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1506184668108" units="1" version="1.0"/>
+</session>

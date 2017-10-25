@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;jdbc.properties&apos; to &apos;JarFileCreation&apos;&#x0A;- Original project: &apos;JDBC_Tutorial_With_MySQL&apos;&#x0A;- Destination element: &apos;JarFileCreation&apos;&#x0A;- Original element: &apos;jdbc.properties&apos;" description="Copy file" destination="=JarFileCreation" element1="jdbc.properties" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1505303072969" units="0" version="1.0"/>
+</session>

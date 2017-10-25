@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Learning TestNG" >
+	<!--For invoking Tests parallely we use 
+	<suite name="Learning TestNG" parallel ="tests"> -->
+	
+	<test name="Array Assert">
+		<classes>
+			<class name="com.testNg.ArrayAssert" />
+		</classes>
+	</test>
+	<test name="Data Provider">
+		<classes>
+			<class name="com.testNg.ParametrisedTestUsingDaataProvider" />
+		</classes>
+	</test>
+
+	<test name="Test Skipping">
+		<classes>
+			<class name="com.testNg.TestSkippingAndPriority" />
+		</classes>
+	</test>
+		<test name="SoftAssert">
+		<classes>
+			<class name="com.testNg.SoftAssertTryial" />
+		</classes>
+	</test>
+	
+		<test name="BeforeAfterAnnotation">
+		<classes>
+			<class name="com.testNg.BeforeAfterAnnotationExample" />
+			<class name="com.testNg.SoftAssertTryial" />
+			<class name="com.testNg.TestSkippingAndPriority" />
+		</classes>
+	</test>
+
+
+</suite>

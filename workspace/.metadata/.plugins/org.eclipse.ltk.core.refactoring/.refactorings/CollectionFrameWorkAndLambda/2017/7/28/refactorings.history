@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;list.Interface.ArrayList&apos; to &apos;ArrayListDemo&apos;&#x0A;- Original project: &apos;CollectionFrameWork&apos;&#x0A;- Original element: &apos;list.Interface.ArrayList&apos;&#x0A;- Renamed element: &apos;list.Interface.ArrayListDemo&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;ArrayList&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;list.Interface{ArrayList.java[ArrayList" matchStrategy="1" name="ArrayListDemo" qualified="false" references="true" similarDeclarations="false" stamp="1499607162217" textual="false" version="1.0"/>
+</session>

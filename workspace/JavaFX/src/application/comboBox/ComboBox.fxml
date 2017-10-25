@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="300.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.comboBox.ComboBoxController">
+   <children>
+      <ComboBox fx:id="comboBox" layoutX="62.0" layoutY="77.0" onAction="#setNameInTextArea" prefWidth="150.0" promptText="Select Name" />
+      <Button fx:id="button" layoutX="72.0" layoutY="173.0" mnemonicParsing="false" onAction="#addMoreNames" text="AddMoreNames" />
+      <TextArea fx:id="area" layoutX="17.0" layoutY="212.0" prefHeight="50.0" prefWidth="240.0" promptText="Selected name would be displayed here" />
+   </children>
+</AnchorPane>

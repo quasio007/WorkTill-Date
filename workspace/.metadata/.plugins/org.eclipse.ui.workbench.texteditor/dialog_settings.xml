@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item value="false" key="isRegEx"/>
+		<item value="class" key="selection"/>
+		<item value="false" key="casesensitive"/>
+		<item value="false" key="incremental"/>
+		<item value="false" key="wrap"/>
+		<item value="false" key="wholeword"/>
+		<list key="findhistory">
+			<item value="class"/>
+			<item value="\n"/>
+			<item value="waitForSomeTime();"/>
+			<item value="SheetFactory"/>
+			<item value="test4"/>
+			<item value="test3"/>
+			<item value="JAVA_MAIN_CLASS_1659"/>
+			<item value="idcodeidcode"/>
+			<item value="idcode"/>
+			<item value="emailExecutionFlag"/>
+			<item value="browser"/>
+			<item value="report"/>
+			<item value="clean"/>
+			<item value="env"/>
+			<item value="static"/>
+		</list>
+		<list key="replacehistory">
+			<item value=""/>
+			<item value="D"/>
+			<item value="C"/>
+			<item value="B"/>
+			<item value="A"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item value="290" key="DIALOG_WIDTH"/>
+		<item value="1|.AppleSystemUIFont|11.0|0|COCOA|1|.AppleSystemUIFont" key="DIALOG_FONT_NAME"/>
+		<item value="409" key="DIALOG_HEIGHT"/>
+		<item value="1030" key="DIALOG_X_ORIGIN"/>
+		<item value="380" key="DIALOG_Y_ORIGIN"/>
+	</section>
+</section>

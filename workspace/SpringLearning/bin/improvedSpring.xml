@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd"
+	xmlns:context="http://www.springframework.org/schema/context">
+
+<context:annotation-config />
+	<!-- Setter dependency injection Example Using Triangle class -->
+	<bean id="equilateralTriangle" class="spring.day1.beanFactory.Triangle">
+		<property name="type" value="Equilateral" />
+	</bean>
+	<bean id="isosleceTriangle" class="spring.day1.beanFactory.Triangle">
+		<property name="type" value="Isoslece" />
+	</bean>
+	<bean id="rightAngleTriangle" class="spring.day1.beanFactory.Triangle">
+		<property name="type" value="RightAngle" />
+	</bean>
+
+
+	<!-- Constructor dependency injection Example Using Rectangle class : -->
+	<bean id="rectangleHeightLengthType" class="spring.day1.beanFactory.Rectangle">
+		<constructor-arg type="int" index="1" value="10" />
+		<constructor-arg type="int" index="0" value="20" />
+		<constructor-arg type="" index="2" value="Rectangle" />
+	</bean>
+
+	<bean id="rectangleHeightLength" class="spring.day1.beanFactory.Rectangle">
+		<constructor-arg type="" index="0" value="10" />
+		<constructor-arg type="" index="1" value="10" />
+	</bean>
+
+
+
+	<!-- Object dependency injection Example Using Circle class : -->
+
+	<!-- Initialize beans for Color and Parameter which can be injected to Circle 
+		class -->
+
+	<!-- Outer bean has ID and can be called by any other bean through ref -->
+	<bean id="parameterBean" class="spring.day1.beanFactory.Parameter">
+		<property name="radius" value="9" />
+	</bean>
+
+	<!-- ref is used for providing refrence to some other bean in xml file -->
+
+	<bean id="circleWithColorAndParameters" class="spring.day1.beanFactory.Circle">
+		<!-- Inner Bean (Not have Id and are specific for one particular bean only) 
+			Example : -->
+		<property name="color">
+			<bean class="spring.day1.beanFactory.Color">
+				<constructor-arg value="Red" />
+				<constructor-arg value="Blue" />
+			</bean>
+		</property>
+
+		<property name="param" ref="parameterBean" />
+	</bean>
+
+
+	<!-- Demo for calling init and destroy methords using interfaces in hexagon 
+		class -->
+	<bean id="hexagon" class="spring.day1.beanFactory.Hexagon">
+		<property name="name" value="Hexy" />
+	</bean>
+
+
+
+
+	<!-- Demo for using used defined destroy and init methord by setting them 
+		in bean defination itself -->
+	<bean id="pentagon" class="spring.day1.beanFactory.Pentagon"
+		init-method="userDefinedInit" destroy-method="userDefinedDestroy">
+		<property name="name" value="Penny" />
+	</bean>
+
+
+
+	<!-- Demo for using BeanPostProcessor -->
+	<bean class="spring.day1.beanFactory.DisplayNameBeanPostProcessor" />
+
+	<!-- Demo for using BeanFactoryPostProcessor -->
+	<bean class="spring.day1.beanFactory.ExampleForFactoryPostProcessor" />
+
+
+
+	<!-- Demo for setting values using property file by using a Spring inbuilt 
+		BeanFactoryPostProcessor class -->
+
+	<bean
+		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="locations" value="septagen.properties" />
+	</bean>
+
+	<bean id="septagen" class="spring.day1.beanFactory.Septagen">
+		<property name="name" value="${name}" />
+		<property name="sides" value="${sides}" />
+	</bean>
+
+	<!-- Demo for Required Annotation using Octagen class: -->
+	<bean id="octagen" class="spring.day1.beanFactory.Octagen">
+		<!-- If name property is not defined here Spring will throw a org.springframework.beans.factory.BeanCreationException 
+			exception here -->
+		<property name="name" value="Octi" />
+
+		<property name="sideLength" value="12" />
+	</bean>
+	
+	<!-- This tag can be used for calling annotationBeanPostProcessor -->
+	
+	
+<!-- i.e below tags are not required : 
+	<bean class="org.springframework.beans.factory.annotation.RequiredAnnotationBeanPostProcessor" /> 
+	-->
+
+</beans>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/SpringLearningWithJava1.6/src/spring/day1/beanFactory/MainAbstractApplicationContext.java"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="1"/>
+</listAttribute>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="spring.day1.beanFactory.MainAbstractApplicationContext"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="SpringLearningWithJava1.6"/>
+</launchConfiguration>

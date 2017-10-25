@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;aspectJ.learning.using.spring.aspect&apos; to &apos;AOPConceptsRevisedWithLatestSpring/src&apos;&#x0A;- Original project: &apos;AspectOrientedProgrammingUsingSpring&apos;&#x0A;- Destination element: &apos;AOPConceptsRevisedWithLatestSpring/src&apos;&#x0A;- Original element: &apos;AspectOrientedProgrammingUsingSpring/src/aspectJ.learning.using.spring.aspect&apos;" description="Copy package" destination="=AOPConceptsRevisedWithLatestSpring/src" element1="/src&lt;aspectJ.learning.using.spring.aspect" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1505662605786" version="1.0"/>
+</session>

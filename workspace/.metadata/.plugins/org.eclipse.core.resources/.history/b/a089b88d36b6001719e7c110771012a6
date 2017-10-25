@@ -1,0 +1,14 @@
+package read.or.output;
+
+public class Demo {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}
+
+interface I{
+	
+}

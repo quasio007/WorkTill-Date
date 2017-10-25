@@ -1,0 +1,1 @@
+[2017-05-30 21:33:00,116] WARN     0[main] - learn.logging.Demo1.main(Demo1.java:10) - Check Done1

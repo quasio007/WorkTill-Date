@@ -1,0 +1,40 @@
+package read.or.output;
+
+import java.util.Set;
+import java.util.TreeSet;
+
+public class Demo {
+
+	public static void main(String[] args) {
+		Set<I> set =new TreeSet<>();
+		set.add(E.HI);
+		set.add(E.HOW);
+		set.add(E.ARE);
+		set.add(E.HI);
+		set.add(E.YOU);
+		set.add(E.HI);
+		
+		System.out.println(set);
+
+	}
+
+}
+
+interface I{
+	void getSomething();
+}
+
+enum E implements I,Comparable<E>{
+	HI,HOW,ARE,YOU;
+
+	@Override
+	public void getSomething() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}
+
+
+
+

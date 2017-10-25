@@ -1,0 +1,45 @@
+<project name="MyFirstProject" default="copyFileToNewFile">
+	<target name="copyFileToNewFile" depends="deleteFile">
+		<echo>Copying File Now...</echo>
+		<copy file="try1.txt" tofile="tryCopymade.txt" />
+
+	</target>
+	<target name="copyFileToNewDir">
+		<echo>Copying File to new Directory...</echo>
+		<copy file="try1.txt" todir="demo/demo1/demo2"/>
+	</target>
+
+	<target name="deleteFile">
+		<echo>Deleting file...</echo>
+		<delete file="tryCopymade.txt" />
+	</target>
+	<target name="deleteDir">
+		<echo>Deleting file...</echo>
+		<delete dir="demo" />
+	</target>
+	<target name="MakeDir">
+		<echo>Making Directory..</echo>
+		<mkdir dir="demo/dem/dem3/dem" />
+	</target>
+	<target name="deleteTextFile">
+	<delete includeemptydirs="true">
+    <fileset dir="demo" includes="**/*.txt"/>
+  </delete>
+</target>
+
+<target name="deleteAll">
+	<delete includeemptydirs="true">
+	    <fileset dir="demo" includes="**/*"/>
+	  </delete>
+</target>
+<target name="deleteAll1">
+	<delete includeEmptyDirs="true">
+	    <fileset dir="demo"/>
+	  </delete>
+</target>
+<target name="deleteTree">
+	<deltree dir="demo"/>
+</target>
+
+
+</project>

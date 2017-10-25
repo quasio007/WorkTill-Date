@@ -1,0 +1,16 @@
+<project name="MyFirstProject" default="target3" basedir="." >
+	
+	<target name="target1" >
+		<echo>Executing Target1</echo>
+		<echo>Basedir::- ${basedir}</echo>
+		<echo>Path::- ${Path}</echo>
+		<echo>Path::- ${PATH}</echo>
+		<echo>Path2::- $PATH</echo>
+	</target>
+	<target name="target2" depends="target1">
+			<echo>Executing Target2</echo>
+		</target>
+	<target name="target3" depends="target2,target1">
+			<echo>Executing Target3</echo>
+		</target>
+</project>

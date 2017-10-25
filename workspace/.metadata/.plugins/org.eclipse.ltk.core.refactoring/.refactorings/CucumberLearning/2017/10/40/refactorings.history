@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;TestRunner.java&apos; to &apos;Cucumber_SpringMaven/src/test/java/runner&apos;&#x0A;- Original project: &apos;CucumberLearning&apos;&#x0A;- Destination element: &apos;Cucumber_SpringMaven/src/test/java/runner&apos;&#x0A;- Original element: &apos;com.quasio.Runner.TestRunner.java&apos;" description="Copy compilation unit" destination="=Cucumber_SpringMaven/src\/test\/java&lt;runner" element1="/src&lt;com.quasio.Runner{TestRunner.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1507398310056" units="1" version="1.0"/>
+</session>

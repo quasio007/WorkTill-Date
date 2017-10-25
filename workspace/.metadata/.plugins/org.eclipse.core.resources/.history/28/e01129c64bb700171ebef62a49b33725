@@ -1,0 +1,30 @@
+package read.or.output;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+public class Demo {
+
+	public static void main(String[] args) {
+		List<Integer>  list =new ArrayList<>();
+		list.add(new Integer(1));
+		list.add(2);
+		list.add(new Integer(3));
+		System.out.println(list);
+		
+		System.out.println("\n\n");
+		int arr[] = {1,2,3,4};
+		for(int i : new int[] {1,2,3}) {
+			System.out.println(i);
+		}
+		List<Integer> list2 =Arrays.asList(new Integer[] {1,2,3});
+		
+	}
+
+}
+
+/*
+for(int i :: {1,2,3})
+			System.out.println(i);
+*/

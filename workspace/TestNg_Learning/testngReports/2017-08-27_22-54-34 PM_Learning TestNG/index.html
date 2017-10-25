@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Learning_TestNG">
+              <span class="suite-name border-failed">Learning TestNG</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Learning_TestNG">
+                    <span>testNG.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Learning_TestNG">
+                    <span class="test-stats">5 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Learning_TestNG">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Learning_TestNG">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Learning_TestNG">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Learning_TestNG">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Learning_TestNG">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">17 methods, 2 failed,  4 skipped,  11 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Learning_TestNG" class="hide-methods failed suite-Learning_TestNG"> (hide)</a> <!-- hide-methods failed suite-Learning_TestNG -->
+                      <a href="#" panel-name="suite-Learning_TestNG" class="show-methods failed suite-Learning_TestNG"> (show)</a> <!-- show-methods failed suite-Learning_TestNG -->
+                    </span>
+                    <div class="method-list-content failed suite-Learning_TestNG">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Learning_TestNG" title="com.testNg.SoftAssertTryial" hash-for-method="trySoftAssert1">trySoftAssert1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Learning_TestNG" title="com.testNg.SoftAssertTryial" hash-for-method="trySoftAssert1">trySoftAssert1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Learning_TestNG -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Learning_TestNG" class="hide-methods skipped suite-Learning_TestNG"> (hide)</a> <!-- hide-methods skipped suite-Learning_TestNG -->
+                      <a href="#" panel-name="suite-Learning_TestNG" class="show-methods skipped suite-Learning_TestNG"> (show)</a> <!-- show-methods skipped suite-Learning_TestNG -->
+                    </span>
+                    <div class="method-list-content skipped suite-Learning_TestNG">
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Learning_TestNG" title="com.testNg.TestSkippingAndPriority" hash-for-method="testTestNg0">testTestNg0</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Learning_TestNG" title="com.testNg.TestSkippingAndPriority" hash-for-method="testTestNg0">testTestNg0</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Learning_TestNG" title="com.testNg.TestSkippingAndPriority" hash-for-method="testTestNg1">testTestNg1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Learning_TestNG" title="com.testNg.TestSkippingAndPriority" hash-for-method="testTestNg1">testTestNg1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Learning_TestNG -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Learning_TestNG" class="hide-methods passed suite-Learning_TestNG"> (hide)</a> <!-- hide-methods passed suite-Learning_TestNG -->
+                      <a href="#" panel-name="suite-Learning_TestNG" class="show-methods passed suite-Learning_TestNG"> (show)</a> <!-- show-methods passed suite-Learning_TestNG -->
+                    </span>
+                    <div class="method-list-content passed suite-Learning_TestNG">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Learning_TestNG" title="com.testNg.BeforeAfterAnnotationExample" hash-for-method="f">f</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Learning_TestNG" title="com.testNg.ArrayAssert" hash-for-method="f1">f1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Learning_TestNG" title="com.testNg.ParametrisedTestUsingDaataProvider" hash-for-method="f1(5, 3, false)">f1(5, 3, false)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Learning_TestNG" title="com.testNg.ParametrisedTestUsingDaataProvider" hash-for-method="f1(2, 3, false)">f1(2, 3, false)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Learning_TestNG" title="com.testNg.ParametrisedTestUsingDaataProvider" hash-for-method="f1(3, 3, true)">f1(3, 3, true)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Learning_TestNG" title="com.testNg.BeforeAfterAnnotationExample" hash-for-method="f1">f1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Learning_TestNG" title="com.testNg.ParametrisedTestUsingDaataProvider" hash-for-method="f2(3, 2)">f2(3, 2)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Learning_TestNG" title="com.testNg.ParametrisedTestUsingDaataProvider" hash-for-method="f2(2, 2)">f2(2, 2)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Learning_TestNG" title="com.testNg.ParametrisedTestUsingDaataProvider" hash-for-method="f3(2, 3, false)">f3(2, 3, false)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Learning_TestNG" title="com.testNg.ParametrisedTestUsingDaataProvider" hash-for-method="f3(3, 3, true)">f3(3, 3, true)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Learning_TestNG" title="com.testNg.ParametrisedTestUsingDaataProvider" hash-for-method="f3(5, 3, false)">f3(5, 3, false)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Learning_TestNG -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Learning_TestNG" class="panel Learning_TestNG">
+          <div class="suite-Learning_TestNG-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.testNg.SoftAssertTryial</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="trySoftAssert1">
+                  </a> <!-- trySoftAssert1 -->
+                  <span class="method-name">trySoftAssert1</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+Check1, Failes Here
+	at com.testNg.SoftAssertTryial.trySoftAssert1(SoftAssertTryial.java:26)
+... Removed 24 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="trySoftAssert1">
+                  </a> <!-- trySoftAssert1 -->
+                  <span class="method-name">trySoftAssert1</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+Check1, Failes Here
+	at com.testNg.SoftAssertTryial.trySoftAssert1(SoftAssertTryial.java:26)
+... Removed 24 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Learning_TestNG-class-failed -->
+          <div class="suite-Learning_TestNG-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.testNg.TestSkippingAndPriority</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testTestNg0">
+                  </a> <!-- testTestNg0 -->
+                  <span class="method-name">testTestNg0</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testTestNg0">
+                  </a> <!-- testTestNg0 -->
+                  <span class="method-name">testTestNg0</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testTestNg1">
+                  </a> <!-- testTestNg1 -->
+                  <span class="method-name">testTestNg1</span>
+                  <div class="stack-trace">org.testng.SkipException: Skipping this one
+	at com.testNg.TestSkippingAndPriority.testTestNg1(TestSkippingAndPriority.java:15)
+... Removed 23 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testTestNg1">
+                  </a> <!-- testTestNg1 -->
+                  <span class="method-name">testTestNg1</span>
+                  <div class="stack-trace">org.testng.SkipException: Skipping this one
+	at com.testNg.TestSkippingAndPriority.testTestNg1(TestSkippingAndPriority.java:15)
+... Removed 23 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Learning_TestNG-class-skipped -->
+          <div class="suite-Learning_TestNG-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.testNg.ParametrisedTestUsingDaataProvider</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="f1(5, 3, false)">
+                  </a> <!-- f1(5, 3, false) -->
+                  <span class="method-name">f1</span>
+                  <span class="parameters">(5, 3, false)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="f1(2, 3, false)">
+                  </a> <!-- f1(2, 3, false) -->
+                  <span class="method-name">f1</span>
+                  <span class="parameters">(2, 3, false)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="f1(3, 3, true)">
+                  </a> <!-- f1(3, 3, true) -->
+                  <span class="method-name">f1</span>
+                  <span class="parameters">(3, 3, true)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="f2(3, 2)">
+                  </a> <!-- f2(3, 2) -->
+                  <span class="method-name">f2</span>
+                  <span class="parameters">(3, 2)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="f2(2, 2)">
+                  </a> <!-- f2(2, 2) -->
+                  <span class="method-name">f2</span>
+                  <span class="parameters">(2, 2)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="f3(2, 3, false)">
+                  </a> <!-- f3(2, 3, false) -->
+                  <span class="method-name">f3</span>
+                  <span class="parameters">(2, 3, false)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="f3(3, 3, true)">
+                  </a> <!-- f3(3, 3, true) -->
+                  <span class="method-name">f3</span>
+                  <span class="parameters">(3, 3, true)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="f3(5, 3, false)">
+                  </a> <!-- f3(5, 3, false) -->
+                  <span class="method-name">f3</span>
+                  <span class="parameters">(5, 3, false)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Learning_TestNG-class-passed -->
+          <div class="suite-Learning_TestNG-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.testNg.BeforeAfterAnnotationExample</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="f">
+                  </a> <!-- f -->
+                  <span class="method-name">f</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="f1">
+                  </a> <!-- f1 -->
+                  <span class="method-name">f1</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Learning_TestNG-class-passed -->
+          <div class="suite-Learning_TestNG-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.testNg.ArrayAssert</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="f1">
+                  </a> <!-- f1 -->
+                  <span class="method-name">f1</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Learning_TestNG-class-passed -->
+        </div> <!-- panel Learning_TestNG -->
+        <div panel-name="test-xml-Learning_TestNG" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/Users/mohitgodara/Documents/Eclipse/workspace/TestNg_Learning/testNG.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Learning TestNG&quot;&gt;
+  &lt;test name=&quot;Array Assert&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.testNg.ArrayAssert&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Array Assert --&gt;
+  &lt;test name=&quot;Data Provider&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.testNg.ParametrisedTestUsingDaataProvider&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Data Provider --&gt;
+  &lt;test name=&quot;Test Skipping&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.testNg.TestSkippingAndPriority&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test Skipping --&gt;
+  &lt;test name=&quot;SoftAssert&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.testNg.SoftAssertTryial&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- SoftAssert --&gt;
+  &lt;test name=&quot;BeforeAfterAnnotation&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.testNg.BeforeAfterAnnotationExample&quot;/&gt;
+      &lt;class name=&quot;com.testNg.SoftAssertTryial&quot;/&gt;
+      &lt;class name=&quot;com.testNg.TestSkippingAndPriority&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- BeforeAfterAnnotation --&gt;
+&lt;/suite&gt; &lt;!-- Learning TestNG --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Learning_TestNG" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Learning TestNG</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Array Assert (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Data Provider (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Test Skipping (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">SoftAssert (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">BeforeAfterAnnotation (3 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Learning_TestNG" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Learning TestNG</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Learning_TestNG" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Learning TestNG</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Learning_TestNG');
+function tableData_Learning_TestNG() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(17);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'f1')
+data.setCell(0, 2, 'com.testNg.ArrayAssert')
+data.setCell(0, 3, 4);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'trySoftAssert1')
+data.setCell(1, 2, 'com.testNg.SoftAssertTryial')
+data.setCell(1, 3, 3);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'f3')
+data.setCell(2, 2, 'com.testNg.ParametrisedTestUsingDaataProvider')
+data.setCell(2, 3, 1);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testTestNg0')
+data.setCell(3, 2, 'com.testNg.TestSkippingAndPriority')
+data.setCell(3, 3, 1);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'testTestNg1')
+data.setCell(4, 2, 'com.testNg.TestSkippingAndPriority')
+data.setCell(4, 3, 1);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'f3')
+data.setCell(5, 2, 'com.testNg.ParametrisedTestUsingDaataProvider')
+data.setCell(5, 3, 0);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'f2')
+data.setCell(6, 2, 'com.testNg.ParametrisedTestUsingDaataProvider')
+data.setCell(6, 3, 0);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'f1')
+data.setCell(7, 2, 'com.testNg.ParametrisedTestUsingDaataProvider')
+data.setCell(7, 3, 0);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'f2')
+data.setCell(8, 2, 'com.testNg.ParametrisedTestUsingDaataProvider')
+data.setCell(8, 3, 0);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'f3')
+data.setCell(9, 2, 'com.testNg.ParametrisedTestUsingDaataProvider')
+data.setCell(9, 3, 0);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'f1')
+data.setCell(10, 2, 'com.testNg.ParametrisedTestUsingDaataProvider')
+data.setCell(10, 3, 0);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'f1')
+data.setCell(11, 2, 'com.testNg.ParametrisedTestUsingDaataProvider')
+data.setCell(11, 3, 0);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'testTestNg1')
+data.setCell(12, 2, 'com.testNg.TestSkippingAndPriority')
+data.setCell(12, 3, 0);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'f')
+data.setCell(13, 2, 'com.testNg.BeforeAfterAnnotationExample')
+data.setCell(13, 3, 0);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'f1')
+data.setCell(14, 2, 'com.testNg.BeforeAfterAnnotationExample')
+data.setCell(14, 3, 0);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'trySoftAssert1')
+data.setCell(15, 2, 'com.testNg.SoftAssertTryial')
+data.setCell(15, 3, 0);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'testTestNg0')
+data.setCell(16, 2, 'com.testNg.TestSkippingAndPriority')
+data.setCell(16, 3, 0);
+window.suiteTableData['Learning_TestNG']= { tableData: data, tableDiv: 'times-div-Learning_TestNG'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 10 ms</span>
+              <div id="times-div-Learning_TestNG">
+              </div> <!-- times-div-Learning_TestNG -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Learning_TestNG" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Learning TestNG</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Learning_TestNG" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Learning_TestNG" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.testNg.BeforeAfterAnnotationExample</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">beforeSuite</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.testNg.ArrayAssert</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">14 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">f1</span>
+                <span class="method-start">15 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">19 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.testNg.ParametrisedTestUsingDaataProvider</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">f1(2, 3, false)</span>
+                <span class="method-start">5059 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">f1(3, 3, true)</span>
+                <span class="method-start">5059 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">f1(5, 3, false)</span>
+                <span class="method-start">5059 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">f2(3, 2)</span>
+                <span class="method-start">5060 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">f2(2, 2)</span>
+                <span class="method-start">5060 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">f3(3, 3, true)</span>
+                <span class="method-start">5060 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">f3(2, 3, false)</span>
+                <span class="method-start">5061 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">f3(5, 3, false)</span>
+                <span class="method-start">5061 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.testNg.TestSkippingAndPriority</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testTestNg1</span>
+                <span class="method-start">10069 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.testNg.SoftAssertTryial</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">trySoftAssert1</span>
+                <span class="method-start">15076 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.testNg.BeforeAfterAnnotationExample</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass</span>
+                <span class="method-start">20086 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-test before">
+                <span class="method-name">beforeTest</span>
+                <span class="method-start">20086 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">20087 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">20087 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">f</span>
+                <span class="method-start">20087 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">afterClass</span>
+                <span class="method-start">20088 ms</span>
+              </div> <!-- configuration-class after -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">20088 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">20088 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">f1</span>
+                <span class="method-start">20088 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.testNg.TestSkippingAndPriority</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testTestNg1</span>
+                <span class="method-start">20089 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.testNg.SoftAssertTryial</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">trySoftAssert1</span>
+                <span class="method-start">20089 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.testNg.BeforeAfterAnnotationExample</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">afterTest</span>
+                <span class="method-start">20090 ms</span>
+              </div> <!-- configuration-test after -->
+              <div class="configuration-suite after">
+                <span class="method-name">afterSuite</span>
+                <span class="method-start">25095 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

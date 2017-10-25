@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Learning TestNG]" parallel="tests">
+  <test name="Test Skipping(failed)" parallel="tests">
+    <classes>
+      <class name="com.quasio.TestSkippingAndPriority">
+        <methods>
+          <include name="testTestNg1"/>
+          <include name="testTestNg0"/>
+          <include name="before"/>
+          <include name="after"/>
+        </methods>
+      </class> <!-- com.quasio.TestSkippingAndPriority -->
+    </classes>
+  </test> <!-- Test Skipping(failed) -->
+</suite> <!-- Failed suite [Learning TestNG] -->

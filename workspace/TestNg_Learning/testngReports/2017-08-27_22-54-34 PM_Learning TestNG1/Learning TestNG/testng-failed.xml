@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Learning TestNG]">
+  <test name="Test Skipping(failed)">
+    <classes>
+      <class name="com.testNg.TestSkippingAndPriority">
+        <methods>
+          <include name="testTestNg0"/>
+          <include name="testTestNg1"/>
+        </methods>
+      </class> <!-- com.testNg.TestSkippingAndPriority -->
+      <class name="com.testNg.BeforeAfterAnnotationExample">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="afterTest"/>
+          <include name="afterClass"/>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+          <include name="afterSuite"/>
+          <include name="beforeClass"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- com.testNg.BeforeAfterAnnotationExample -->
+      <class name="com.testNg.ArrayAssert">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- com.testNg.ArrayAssert -->
+    </classes>
+  </test> <!-- Test Skipping(failed) -->
+  <test name="SoftAssert(failed)">
+    <classes>
+      <class name="com.testNg.SoftAssertTryial">
+        <methods>
+          <include name="trySoftAssert1"/>
+        </methods>
+      </class> <!-- com.testNg.SoftAssertTryial -->
+      <class name="com.testNg.BeforeAfterAnnotationExample">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="afterTest"/>
+          <include name="afterClass"/>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+          <include name="afterSuite"/>
+          <include name="beforeClass"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- com.testNg.BeforeAfterAnnotationExample -->
+      <class name="com.testNg.ArrayAssert">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- com.testNg.ArrayAssert -->
+    </classes>
+  </test> <!-- SoftAssert(failed) -->
+  <test name="BeforeAfterAnnotation(failed)">
+    <classes>
+      <class name="com.testNg.SoftAssertTryial">
+        <methods>
+          <include name="trySoftAssert1"/>
+        </methods>
+      </class> <!-- com.testNg.SoftAssertTryial -->
+      <class name="com.testNg.TestSkippingAndPriority">
+        <methods>
+          <include name="testTestNg0"/>
+          <include name="testTestNg1"/>
+        </methods>
+      </class> <!-- com.testNg.TestSkippingAndPriority -->
+      <class name="com.testNg.BeforeAfterAnnotationExample">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="afterTest"/>
+          <include name="afterClass"/>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+          <include name="afterSuite"/>
+          <include name="beforeClass"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- com.testNg.BeforeAfterAnnotationExample -->
+      <class name="com.testNg.ArrayAssert">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- com.testNg.ArrayAssert -->
+    </classes>
+  </test> <!-- BeforeAfterAnnotation(failed) -->
+</suite> <!-- Failed suite [Learning TestNG] -->
