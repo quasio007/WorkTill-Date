@@ -2,12 +2,16 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="class" key="selection"/>
+		<item value="containsKey" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="false" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="&#x09; private static int[] heapSort() {"/>
+			<item value="containskey"/>
+			<item value="max"/>
+			<item value="System"/>
 			<item value="class"/>
 			<item value="\n"/>
 			<item value="waitForSomeTime();"/>
@@ -19,10 +23,6 @@
 			<item value="idcode"/>
 			<item value="emailExecutionFlag"/>
 			<item value="browser"/>
-			<item value="report"/>
-			<item value="clean"/>
-			<item value="env"/>
-			<item value="static"/>
 		</list>
 		<list key="replacehistory">
 			<item value=""/>

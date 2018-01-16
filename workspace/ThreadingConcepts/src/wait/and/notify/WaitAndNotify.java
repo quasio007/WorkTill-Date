@@ -25,7 +25,7 @@ private  void consumer() throws InterruptedException{
 		System.out.println();
 		System.out.println("In Consumer and Thread Name is: "+Thread.currentThread().getName());
 //		notify();
-		lock.notifyAll();
+		lock.notify();
 //		notify
 		System.out.println("Completing consumer block");
 		System.out.println();

@@ -1,0 +1,199 @@
+package clsa_Hcl;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
+public class Time24HourClock {
+	private int countForNumGreaterThan2 = 0;
+	private int countForNumGreaterThan3 = 0;
+	private int countForNumGreaterThan5 = 0;
+
+	public static void main(String[] args) {
+		Time24HourClock time = new Time24HourClock();
+		time.getMaxAndMinTime(2, 2,2,2,2,5);
+
+	}
+
+	private void getMaxAndMinTime(int a, int b, int c, int d, int e, int f) {
+		List<Integer> list = new ArrayList<>();
+		list.add(a);
+		list.add(b);
+		list.add(c);
+		list.add(d);
+		list.add(e);
+		list.add(f);
+		Collections.sort(list);
+		System.out.println("Given Parameters :: " + list);
+
+		List<Integer> list1 = new ArrayList<>(list);
+
+		System.out.print("\nMinimum Time :: ");
+		System.out.println(findMinimumTime(list));
+		System.out.print("\nMaximum Time :: ");
+		System.out.println(findMaximumTime(list1));
+
+	}
+
+	public String findMaximumTime(List<Integer> list) {
+
+		if (creatingTimePossible(list)) {
+			return maximumTime(list);
+		}
+
+		return "NOT POSSIBLE";
+	}
+
+	public String findMinimumTime(List<Integer> list) {
+
+		if (creatingTimePossible(list)) {
+			return minimunTime(list);
+		}
+
+		return "NOT POSSIBLE";
+	}
+
+	private boolean creatingTimePossible(List<Integer> list) {
+		boolean isOneOrZeroThere = true;
+		if (list.get(0) > 1)
+			isOneOrZeroThere = false;
+
+		countForNumGreaterThan2 = 0;
+		countForNumGreaterThan3 = 0;
+		countForNumGreaterThan5 = 0;
+
+		for (int i : list) {
+			if (i > 5) {
+				countForNumGreaterThan5++;
+				countForNumGreaterThan2++;
+				countForNumGreaterThan3++;
+			} else if (i > 3) {
+				countForNumGreaterThan3++;
+				countForNumGreaterThan2++;
+			} else if (i > 2) {
+				countForNumGreaterThan2++;
+			}
+		}
+		// System.out.println("countForNumGreaterThan2 : " + countForNumGreaterThan2);
+		// System.out.println("countForNumGreaterThan3 : " + countForNumGreaterThan3);
+		// System.out.println("countForNumGreaterThan5 : " + countForNumGreaterThan5);
+
+		if (isOneOrZeroThere) {
+			if (countForNumGreaterThan5 > 3)
+				return false;
+			if (countForNumGreaterThan2 > 5)
+				return false;
+		} else {
+			if (countForNumGreaterThan5 > 2)
+				return false;
+			if (countForNumGreaterThan3 > 4)
+				return false;
+			if (countForNumGreaterThan2 > 5)
+				return false;
+		}
+
+		return true;
+	}
+
+	private String minimunTime(List<Integer> list) {
+		StringBuilder sb = new StringBuilder();
+		// For seconds:
+		sb.append(list.remove(list.size() - 1));
+		sb.append(findMaxNumLessThanRequired(list, 6));
+
+		// For Minutes :
+		sb.append(list.remove(list.size() - 1));
+		sb.append(findMaxNumLessThanRequired(list, 6));
+
+		// For Hour:
+		sb.append(list.remove(list.size() - 1));
+		sb.append(list.remove(0));
+
+		String reverseStr = sb.reverse().toString();
+		String result = String.format("%s:%s:%s", reverseStr.substring(0, 2), reverseStr.substring(2, 4),
+				reverseStr.substring(4, 6));
+		return result;
+	}
+
+	private String maximumTime(List<Integer> list) {
+		StringBuilder sb = new StringBuilder();
+		// For Hours:
+		int num = 0;
+		if (countForNumGreaterThan5 <= 2 && countForNumGreaterThan3 <= 4 && countForNumGreaterThan2 <= 5) {
+			num = findMaxNumLessThanRequired(list, 3);
+		} else {
+			num = findMaxNumLessThanRequired(list, 2);
+		}
+
+		sb.append(num);
+		if (num == 2) {
+			sb.append(findMaxNumLessThanRequired(list, 4));
+		} else {
+			sb.append(list.remove(list.size() - 1));
+		}
+
+		// For Minutes :
+		sb.append(findMaxNumLessThanRequired(list, 6));
+		sb.append(list.remove(list.size() - 1));
+		
+
+		// For Seconds:
+		sb.append(findMaxNumLessThanRequired(list, 6));
+		sb.append(list.remove(0));
+
+		String reverseStr = sb.substring(0, 2) + reverse(sb.substring(2, 4)) + reverse(sb.substring(4, 6));
+		String result = String.format("%s:%s:%s", reverseStr.substring(0, 2), reverseStr.substring(2, 4),
+				reverseStr.substring(4, 6));
+		return result;
+	}
+	
+//	private String maximumTime(List<Integer> list) {
+//		StringBuilder sb = new StringBuilder();
+//		// For Hours:
+//		int num = 0;
+//		if (countForNumGreaterThan5 <= 2 && countForNumGreaterThan3 <= 4 && countForNumGreaterThan2 <= 5) {
+//			num = findMaxNumLessThanRequired(list, 3);
+//		} else {
+//			num = findMaxNumLessThanRequired(list, 2);
+//		}
+//
+//		sb.append(num);
+//		if (num == 2) {
+//			sb.append(findMaxNumLessThanRequired(list, 4));
+//		} else {
+//			sb.append(list.remove(list.size() - 1));
+//		}
+//
+//		// For Minutes :
+//		sb.append(list.remove(list.size() - 1));
+//		sb.append(findMaxNumLessThanRequired(list, 6));
+//
+//		// For Seconds:
+//		sb.append(list.remove(list.size() - 1));
+//		sb.append(list.remove(0));
+//
+//		String reverseStr = sb.substring(0, 2) + reverse(sb.substring(2, 4)) + reverse(sb.substring(4, 6));
+//		String result = String.format("%s:%s:%s", reverseStr.substring(0, 2), reverseStr.substring(2, 4),
+//				reverseStr.substring(4, 6));
+//		return result;
+//	}
+
+	private String reverse(String str) {
+		StringBuilder sb = new StringBuilder(str);
+		return sb.reverse().toString();
+	}
+
+	private int findMaxNumLessThanRequired(List<Integer> list, int pivot) {
+		int num = 0;
+		for (int i = list.size() - 1; i >= 0; i--) {
+			num = list.get(i);
+			if (num < pivot) {
+				list.remove(i);
+				break;
+			}
+
+		}
+		return num;
+	}
+
+}

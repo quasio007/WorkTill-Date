@@ -17,12 +17,8 @@
 		</list>
 	</section>
 	<section name="NewWizardAction">
-		<item value="org.eclipse.m2e.core.wizards.Maven2ProjectWizard" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
+		<item value="org.eclipse.jst.servlet.ui.project.facet.WebProjectWizard" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
 		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
-			<item value="org.eclipse.ui.Basic"/>
-			<item value="org.eclipse.emf.codegen.ecore.ui.wizardCategory"/>
-			<item value="org.eclipse.emf.codegen.ecore.ui.wizardCategory/org.eclipse.emf.codegen.ecore.ui.mappingWizardCategory"/>
-			<item value="org.eclipse.jst.ejb.ui"/>
 			<item value="org.eclipse.jdt.ui.java"/>
 			<item value="org.eclipse.jdt.ui.java/org.eclipse.jdt.junit"/>
 			<item value="org.eclipse.emf.codegen.ui.JETNewWizards"/>
@@ -32,12 +28,7 @@
 			<item value="org.eclipse.m2e"/>
 			<item value="org.eclipse.pde.PDE"/>
 			<item value="org.eclipse.rse.ui.newWizards.rseCategory"/>
-			<item value="org.testng.eclipse"/>
-			<item value="org.eclipse.pde.userAssistance"/>
 			<item value="org.eclipse.wst.web.ui"/>
-			<item value="org.eclipse.jst.ws.ui.new"/>
-			<item value="org.eclipse.xtend.ide.wizards"/>
-			<item value="org.eclipse.xtext.projectwiz"/>
 		</list>
 	</section>
 	<section name="ImportExportAction">

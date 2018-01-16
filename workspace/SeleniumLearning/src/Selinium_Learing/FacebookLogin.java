@@ -19,6 +19,7 @@ email.sendKeys("mohit.godara@gamil.com");
 password.sendKeys("password");
 submit.click();
 //System.out.println(w.getTitle());
+
 	}
 
 }

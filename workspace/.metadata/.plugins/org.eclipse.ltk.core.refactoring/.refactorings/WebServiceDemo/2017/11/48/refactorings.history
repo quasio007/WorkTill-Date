@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;ProductCatalog.java&apos; to &apos;ServletsProject/src/com.quasio&apos;&#x0A;- Original project: &apos;WebServiceDemo&apos;&#x0A;- Destination element: &apos;ServletsProject/src/com.quasio&apos;&#x0A;- Original element: &apos;com.quasio.ProductCatalog.java&apos;" description="Copy compilation unit" destination="=ServletsProject/src&lt;com.quasio" element1="/src&lt;com.quasio{ProductCatalog.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1511718697395" units="1" version="1.0"/>
+</session>

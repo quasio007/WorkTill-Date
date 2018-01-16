@@ -1,0 +1,53 @@
+package clsa_Hcl;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+public class Solution {
+
+	public static void main(String[] args) {
+		Solution s = new Solution();
+		System.out.println(s.solution(0, 0, 0, 0, 0, 0));
+//		System.out.println(s.solution(0, 0, 0, 7, 8, 9));
+//		System.out.println(s.solution(2, 4, 5, 5, 9, 9));
+
+		// NOT POSSIBLE
+
+	}
+
+	public String solution(int A, int B, int C, int D, int E, int F) {
+		Map<Integer, Integer> map = new HashMap<>();
+		List<Integer> list = new ArrayList<>();
+		list.add(A);
+		list.add(B);
+		list.add(C);
+		list.add(D);
+		list.add(E);
+		list.add(F);
+		Collections.sort(list);
+		
+		for(int i : list) {
+			if(map.containsKey(i)) {
+				int value = map.get(i);
+				map.put(i, ++value);
+			}else {
+				map.put(i, 1);
+			}
+		}
+		return null;
+	}
+
+}
+
+// List<Integer> list = new ArrayList<>();
+//
+// list.add(6);
+// list.add(8);
+// list.add(4);
+// list.add(2);
+// System.out.println(list);
+// Collections.sort(list);
+// System.out.println(list);

@@ -1,0 +1,107 @@
+package clsa_Hcl;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.LinkedHashMap;
+import java.util.List;
+import java.util.Map;
+
+public class Solution {
+
+	public static void main(String[] args) {
+		Solution s = new Solution();
+		System.out.println(s.solution(0, 0, 0, 0, 0, 0));
+		// System.out.println(s.solution(0, 0, 0, 7, 8, 9));
+		// System.out.println(s.solution(2, 4, 5, 5, 9, 9));
+
+		// NOT POSSIBLE
+
+	}
+
+	public String solution(int A, int B, int C, int D, int E, int F) {
+		Map<Integer, Integer> map = new LinkedHashMap<>();
+		List<Integer> list = new ArrayList<>();
+		list.add(A);
+		list.add(B);
+		list.add(C);
+		list.add(D);
+		list.add(E);
+		list.add(F);
+		Collections.sort(list);
+
+		for (int i : list) {
+			if (map.containsKey(i)) {
+				int value = map.get(i);
+				map.put(i, ++value);
+			} else {
+				map.put(i, 1);
+			}
+		}
+		boolean isTimePossible = true;
+		boolean isZeroAndOneThereInList = true;
+		boolean firstTime = true;
+		for (int i : map.keySet()) {
+			int val = map.get(i);
+			if (firstTime) {
+				firstTime = false;
+				if (i > 1) {
+					isZeroAndOneThereInList = false;
+				}
+			}
+
+			if (i <= 2) {
+				if (val > 6) {
+					isTimePossible = false;
+					break;
+				}
+
+			}
+			if (i > 5) {
+				if (val > 3) {
+					isTimePossible = false;
+					break;
+				}
+			}
+			if (isZeroAndOneThereInList) {
+				if (i >= 3 && i <= 5) {
+					if (val > 5) {
+						isTimePossible = false;
+						break;
+					}
+				}
+
+			} else {
+				if(i==3) {
+					if (val > 5) {
+						isTimePossible = false;
+						break;
+					}
+				}
+				
+				if (i >= 4 && i <= 5) {
+					if (val > 4) {
+						isTimePossible = false;
+						break;
+					}
+				}
+			}
+		}
+
+		if (!isTimePossible) {
+			return "NOT POSSIBLE";
+		}
+
+		return null;
+	}
+
+}
+
+// List<Integer> list = new ArrayList<>();
+//
+// list.add(6);
+// list.add(8);
+// list.add(4);
+// list.add(2);
+// System.out.println(list);
+// Collections.sort(list);
+// System.out.println(list);

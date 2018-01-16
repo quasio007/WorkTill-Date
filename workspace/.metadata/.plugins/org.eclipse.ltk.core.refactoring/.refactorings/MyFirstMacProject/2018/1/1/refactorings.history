@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;MyFirstMacProject/src/resources/file.text&apos; to &apos;file.txt&apos;" description="Rename resource &apos;file.text&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/resources/file.text" name="file.txt" stamp="1515241660418" updateReferences="true"/>
+</session>

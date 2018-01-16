@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;EvenString3DPLMCodingQuestion.java&apos; to &apos;InterviewCodingPuzzles/src/threeDplm&apos;&#x0A;- Original project: &apos;MyFirstMacProject&apos;&#x0A;- Destination element: &apos;InterviewCodingPuzzles/src/threeDplm&apos;&#x0A;- Original element: &apos;EvenString3DPLMCodingQuestion.java&apos;" description="Copy compilation unit" destination="=InterviewCodingPuzzles/src&lt;threeDplm" element1="/src&lt;{EvenString3DPLMCodingQuestion.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1509881155161" units="1" version="1.0"/>
+</session>

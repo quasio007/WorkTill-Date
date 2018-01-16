@@ -1,5 +1,0 @@
-package read.or.output;
-
-public enum E extends Demo{
-
-}

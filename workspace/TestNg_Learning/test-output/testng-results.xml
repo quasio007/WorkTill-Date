@@ -1,17 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Check Email Notification" duration-ms="16265" started-at="2017-08-27T17:25:52Z" finished-at="2017-08-27T17:26:09Z">
+  <suite name="Default suite" duration-ms="32" started-at="2018-01-01T16:37:33Z" finished-at="2018-01-01T16:37:33Z">
     <groups>
     </groups>
-    <test name="Check Email Notification" duration-ms="16265" started-at="2017-08-27T17:25:52Z" finished-at="2017-08-27T17:26:09Z">
-      <class name="utils.SmsEmailNotification">
-        <test-method status="PASS" signature="sendEmail()[pri:0, instance:utils.SmsEmailNotification@47f37ef1]" name="sendEmail" duration-ms="16256" started-at="2017-08-27T22:55:52Z" finished-at="2017-08-27T22:56:09Z">
+    <test name="Default test" duration-ms="32" started-at="2018-01-01T16:37:33Z" finished-at="2018-01-01T16:37:33Z">
+      <class name="com.testNg.BeforeAfterAnnotationExample">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.testNg.BeforeAfterAnnotationExample@4439f31e]" name="beforeSuite" is-config="true" duration-ms="10" started-at="2018-01-01T22:07:33Z" finished-at="2018-01-01T22:07:33Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- sendEmail -->
-      </class> <!-- utils.SmsEmailNotification -->
-    </test> <!-- Check Email Notification -->
-  </suite> <!-- Check Email Notification -->
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.testNg.BeforeAfterAnnotationExample@4439f31e]" name="beforeTest" is-config="true" duration-ms="0" started-at="2018-01-01T22:07:33Z" finished-at="2018-01-01T22:07:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.testNg.BeforeAfterAnnotationExample@4439f31e]" name="beforeClass" is-config="true" duration-ms="0" started-at="2018-01-01T22:07:33Z" finished-at="2018-01-01T22:07:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="f()[pri:0, instance:com.testNg.BeforeAfterAnnotationExample@4439f31e]" name="f" duration-ms="7" started-at="2018-01-01T22:07:33Z" finished-at="2018-01-01T22:07:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.testNg.BeforeAfterAnnotationExample@4439f31e]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-01-01T22:07:33Z" finished-at="2018-01-01T22:07:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.testNg.BeforeAfterAnnotationExample@4439f31e]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-01-01T22:07:33Z" finished-at="2018-01-01T22:07:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.testNg.BeforeAfterAnnotationExample@4439f31e]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-01-01T22:07:33Z" finished-at="2018-01-01T22:07:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="f1()[pri:0, instance:com.testNg.BeforeAfterAnnotationExample@4439f31e]" name="f1" duration-ms="1" started-at="2018-01-01T22:07:33Z" finished-at="2018-01-01T22:07:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f1 -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.testNg.BeforeAfterAnnotationExample@4439f31e]" name="afterClass" is-config="true" duration-ms="0" started-at="2018-01-01T22:07:33Z" finished-at="2018-01-01T22:07:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.testNg.BeforeAfterAnnotationExample@4439f31e]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-01-01T22:07:33Z" finished-at="2018-01-01T22:07:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.testNg.BeforeAfterAnnotationExample@4439f31e]" name="afterTest" is-config="true" duration-ms="1" started-at="2018-01-01T22:07:33Z" finished-at="2018-01-01T22:07:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.testNg.BeforeAfterAnnotationExample@4439f31e]" name="afterSuite" is-config="true" duration-ms="0" started-at="2018-01-01T22:07:33Z" finished-at="2018-01-01T22:07:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- com.testNg.BeforeAfterAnnotationExample -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

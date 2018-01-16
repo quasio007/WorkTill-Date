@@ -1,0 +1,54 @@
+package clsa_Hcl;
+
+public class Solution {
+
+	public static void main(String[] args) {
+		Solution s = new Solution();
+		int[] A = new int[8];
+		A[0] = -1;
+		A[1] = 3;
+		A[2] = -4;
+		A[3] = 5;
+		A[4] = 1;
+		A[5] = -6;
+		A[6] = 2;
+		A[7] = 1;
+		// s.solution(A, N);
+
+	}
+
+	int solution(int A[], int N) {
+		for (int i = 0; i < N; i++) {
+			int prefixSum = calculatePrefixSum(A, i);
+			int suffixSum = calculateSuffixSum(A, i);
+
+			if (prefixSum == suffixSum)
+				return i;
+		}
+
+		return -1;
+	}
+
+	private int calculatePrefixSum(int[] arr, int index) {
+		int sum = 0;
+		if (index == 0)
+			return sum;
+
+		for (int i = 0; i < index; i++)
+			sum += arr[i];
+
+		return sum;
+	}
+
+	private int calculateSuffixSum(int[] arr, int index) {
+		int sum = 0;
+		if (index == arr.length - 1)
+			return sum;
+
+		for (int i = index + 1; i < arr.length; i++)
+			sum += arr[i];
+
+		return 0;
+	}
+
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;JavaAlgorithms&apos; to &apos;DataStructuresAndAlgorithms&apos;" description="Rename resource &apos;JavaAlgorithms&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/JavaAlgorithms" name="DataStructuresAndAlgorithms" stamp="1512242714316" updateReferences="true"/>
+</session>
